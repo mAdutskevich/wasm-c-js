@@ -1,0 +1,17 @@
+h3 {
+  margin: 10px 0;
+}
+
+.block {
+  display: flex;
+  margin-top: 10px;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  margin-right: 10px;
+}

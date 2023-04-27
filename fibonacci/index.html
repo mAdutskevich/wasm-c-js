@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h3>Fibonacci cold start</h3>
+    <div class="block">
+      <button id="wasm-button" class="button">Run Wasm test</button>
+      <div class="result">
+        <span>Result time:</span>
+        <span id="wasm-result"></span>
+      </div>
+    </div>
+    <div class="block">
+      <button id="js-button" class="button">Run JS test</button>
+      <div class="result">
+        <span>Result time:</span>
+        <span id="js-result"></span>
+      </div>
+    </div>
+    <div class="block">
+      <div class="result">
+        <span>Wasm/Js ratio:</span>
+        <span id="ratio"></span>
+      </div>
+    </div>
+    <hr />
+    <h3>Fibonacci warm start</h3>
+    <div class="block">
+      <button id="wasm-button-warm" class="button">Run Wasm test</button>
+      <div class="result">
+        <span>Result time:</span>
+        <span id="wasm-result-warm"></span>
+      </div>
+    </div>
+    <div class="block">
+      <button id="js-button-warm" class="button">Run JS test</button>
+      <div class="result">
+        <span>Result time:</span>
+        <span id="js-result-warm"></span>
+      </div>
+    </div>
+    <div class="block">
+      <div class="result">
+        <span>Wasm/Js ratio:</span>
+        <span id="ratio-warm"></span>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
