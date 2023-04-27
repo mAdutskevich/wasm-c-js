@@ -1,6 +1,6 @@
 ## Simple example of porting 2 math functions from C to Wasm
 
-#### run this command inside the folder to compile math.c to math.js and math.wasm
+#### Run the command below inside the folder to compile math.c to math.js and math.wasm
 
 emcc math.c -o math.js -s EXPORT_ES6=1 -s MODULARIZE=1 -s EXPORT_NAME=loadMath -s EXPORTED_FUNCTIONS="['_add', '_substract']"
 
