@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h3 {
+  margin: 10px 0;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.test-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.block {
+  position: relative;
+  width: 400px;
+  margin-top: 10px;
+}
+
+.img {
+  display: block;
+  width: 100%;
+}
+
+.result-time {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  margin-right: 10px;
+}

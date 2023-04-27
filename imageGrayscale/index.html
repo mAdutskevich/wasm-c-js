@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>Image grayscale</h3>
+      <div class="block" id="original-image-block">
+        <p>Original image:</p>
+        <img
+          src="../assets/beautiful-landscape-photo-l.jpg"
+          alt="original image"
+          class="img"
+          id="original-image"
+        />
+      </div>
+      <div class="test-container">
+        <div class="block">
+          <button id="wasm-button" class="button">Run Wasm test</button>
+          <div class="result-time">
+            <span>Result time:</span>
+            <span id="wasm-result"></span>
+          </div>
+          <div class="result-time">
+            <span>Wasm/Js ratio:</span>
+            <span id="ratio"></span>
+          </div>
+          <div class="result">
+            <p>Result:</p>
+            <canvas id="wasm-canvas"></canvas>
+          </div>
+        </div>
+        <div class="block">
+          <button id="js-button" class="button">Run JS test</button>
+          <div class="result-time">
+            <span>Result time:</span>
+            <span id="js-result"></span>
+          </div>
+          <div class="result">
+            <p>Result:</p>
+            <canvas id="js-canvas"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
